@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Poppins" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<title>Proyecto - Samantha Arburola</title>
+</head>
+
+<body>
+	<header>
+		<h1>Portafolio Personal</h1>
+		<h2>Samantha Arburola</h2>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="formacion.html">Formación</a></li>
+			<li><a href="intereses.html">Intereses Personales</a></li>
+			<li class="active"><a href="portafolio.html">Portafolio de Proyectos</a></li>
+			<li><a href="contacto.html">Contáctame</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<articles>
+			<section class="datas">
+				<h2>Portafolio de Proyectos</h2>
+				<dl>
+					<dt>Proyecto</dt>
+					<dd><input type="text"></dd>
+
+					<dt>Curso</dt>
+					<dd>
+                        <select name="curso" id="curso" onchange="selCourse()">
+                            <option value="0">Seleccione</option>
+                            <option value="1">IDAW</option>
+                            <option value="n">Nuevo Curso</option>
+                        </select>
+                        <?php
+                        	
+                        ?>
+
+                        <div class="oculta" id="addCourse">
+                            Código: <input id="codigo" type="text" onchange="checkCode()">
+                            Nombre: <input id="curso" type="text">
+                            <button onclick="newCourse()">Enviar</button>
+                            <button id="idCancelCourse" onclick="cancelCourse()">Cancelar</button>
+                        </div>
+                    </dd>
+                    
+					<dt>Resumen</dt>
+					<dd><input type="text"></dd>
+
+					<dt>Descripción</dt>
+					<dd><input type="text"></dd>
+                    
+                    <dt>Tecnologías Utilizadas</dt>
+					<dd><input type="checkbox" name="c++">C++</dd>
+                    <dd><input type="checkbox" name="c">C</dd>
+                    <dd><input type="checkbox" name="java">Java</dd>
+                    <dd><input type="checkbox" name="tec">TEC</dd>
+                    <dd><span id="idAddTech" onclick="addTech()">Agregar</span>
+                        <div class="oculta" id="newTech">
+                            Nombre: <input id="tech" type="text">
+                            <button onclick="">Guardar</button>
+					        <button onclick="cancelTech()">Cancelar</button>
+					    </div>
+                    </dd>
+
+					<dt>Tipo de Proyecto</dt>
+					<dd><input type="radio" name="projectType">Investigación</dd>
+                    <dd><input type="radio" name="projectType">Desarrollo</dd>
+                    <dd><input type="radio" name="projectType">Infraestructura</dd>
+
+					<dt>Forma de Trabajo</dt>
+					<dd><select name="grupo" id="grupo" onchange="setGroup()">
+                            <option value="g1">Individual</option>
+                        <option value="n">Grupal</option>
+                        </select>
+                    </dd>
+					<dd><div class="oculta">
+                        <dd>Cantidad de Integrantes <input type="number" min="1"></dd>
+					   <dd>Rol <input type="text"></dd>
+                        </div>
+
+
+					<dt>Galería</dt>
+					<dd>
+                        <button onclick="addPic()">Agregar</button>
+                        <div class="visible">
+                            <input type="file" name="datafile" size="50">
+                        </div>
+                    </dd>
+					
+					<dt><button class="save">Guardar</button></dt>
+				</dl>
+			</section>
+		</articles>
+	</main>
+	<footer>
+	<p>
+		© 2017 by Samantha Arburola - Introducción al Desarrollo de Aplicaciones Web
+    </p>
+	</footer>
+</body>
+<script src="js/script.js"></script>
+</html>

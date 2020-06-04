@@ -1,0 +1,341 @@
+/* For desktop: */
+.col-1 {width: 8%;}
+.col-2 {width: 16%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33%;}
+.col-5 {width: 41%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58%;}
+.col-8 {width: 66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83%;}
+.col-11 {width: 91%;}
+.col-12 {width: 100%}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        
+    }
+}
+/*
+-- Fuentes
+Titulos
+font-family: 'Poppins', sans-serif;
+Explicaciones
+font-family: 'Indie Flower', cursive;
+Data
+font-family: 'Josefin Sans', sans-serif;
+
+-- Colores
+celeste claro:  #14B5CC
+celeste oscuro: #006F7F
+naranja:        #CC5A00
+café:           #7F3800
+crema:          #CCB65E
+*/
+body {
+    background-image: url("../img/decolorado2.png");
+    background-repeat: repeat;    
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    background-color: #CCB65E;
+}
+h1, h3, .datas table caption{
+    font-family: 'Poppins', sans-serif;
+    color: #CC5A00;
+    text-align: center;
+    margin: 0;
+}
+h2{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+	color: #7F3800;
+	text-align: center;
+    padding:5px 0px;
+}
+
+nav{
+    margi:0;
+    background: #7F3800;
+    padding-top: 0.2px;
+    padding-bottom: 0.2px;
+}
+nav ul{
+    
+    margin: 5px 0px;
+    padding: 6px 0px;
+    overflow: hidden;
+    border-width: 2px;
+    border-color: #CCB65E;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+}
+ul li{
+    text-align: center;
+    float: left;
+    list-style-type: none;
+    padding: 0px 15px;
+}
+ul li a {
+    display: block;
+	text-decoration:none;
+    vertical-align: middle;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 120%;
+	color: #14B5CC;
+    font-weight: bolder;
+}
+li a:hover{
+    color: white;
+}
+.active{
+    font-weight: bolder;
+    text-shadow: 1px 1px #006F7F;
+    font-size: 120%;
+}
+.oculta{
+    display: none;
+}
+.visible{
+    display: block;
+}
+articles{
+    float: left;
+}
+aside{
+    vertical-align: top;
+    float: right;
+}
+aside h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #7F3800;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px #CC5A00;
+    border-bottom: 2px outset black;
+    margin-bottom: 3px;
+    text-align: center;
+}
+aside p a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: #006F7F;
+}
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    margin-top: 10px;
+    padding: 2px;
+    text-align: center;
+    background: #CCB65E;
+    clear: left;
+    display: block;
+}
+
+.gallery table tr td{
+    background-color: white;
+    position: relative;
+}
+.gallery table tr td img{
+    width: 100%;
+}
+.gallery table tr td:hover img {
+  opacity: 0.3;
+}
+.gallery table tr td:hover .onPic {
+  opacity: 1;
+}
+.gallery table tr td img:hover{
+    opacity: 0.6;
+    background-color: white;
+}
+.gallery table img{
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.text{
+    background-color: #CC5A00;
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+}
+.onPic{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.datas{
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+.tableActual{
+    margin-left: 23%;
+}
+.personal{
+    margin-left:8%;
+}
+.datas table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.titleTable{
+    font-family: 'Poppins', sans-serif;
+    font-size: 120%;
+    font-weight: bolder;
+    color: #CC5A00;
+    text-align: center;
+    margin-top: 20px;
+}
+.datas tr{
+    border-collapse: collapse;
+    border-bottom: 1px solid #006F7F;
+}
+.datas td{
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.datas img{
+    width: 50%;
+    align-items: center;
+}
+.interes{
+    width: 80%;
+    margin-left: 10%;
+}
+.portafolio{
+    background-color: aliceblue;
+    opacity: 0.9;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.portafolio table{
+    border-collapse: collapse;
+}
+.portafolio table tr{
+    border-collapse: collapse;
+    border-bottom: 1px solid #006F7F;
+}
+.portafolio .myTh{
+    border-bottom: 2px solid blue;
+    text-align: center;
+    border-right: 2px solid blue;
+}
+.portafolio .lasTh{
+    border-bottom: 2px solid blue;
+    text-align: center;
+}
+.portafolio table td{
+    text-align: left;
+    padding: 4px;
+}
+.proyecto dt{
+    margin-top: 7px;
+}
+.list::before{
+    content: ">";
+    text-shadow: 1px 1px black;
+    margin-right: 10px;
+    color: #14B5CC;
+    font-weight: bolder;
+}
+iframe{
+    height: 500px;
+    width: 100%;
+}
+
+dl{
+    font-family: 'Josefin Sans', sans-serif;
+}
+dt{
+   font-weight: bold; 
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.contact{
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.contact dl, .contact h3{
+    margin-left: 30%;
+}
+.contact h3{
+    text-align: center;
+}
+.contact form{
+    margin-left: 25%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact legend{
+    width: 50%;
+}
+.contact form label{
+    width: 20%;
+    margin-bottom: 10px;
+}
+.myIn{
+    margin-left: 25%;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.myInDate{
+    margin:10px 0;
+    width: 130px;
+}
+.littleTable{
+    margin-left: 40%;
+    text-align: center;
+}
+.contact form button{
+    margin-left:35%;
+}
+button, .btn {
+    font-weight: bolder;
+    width: 100px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Indie Flower', cursive;
+    color: #14B5CC;
+    font-size: 15px;
+    background: #7F3800;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+button:hover , .btn:hover{
+    color: #CCB65E;
+    background: #006F7F;
+    text-decoration: none;
+}
+.btn-element{
+    text-align: center;
+}
+.big-btn{
+    margin-left: 30%;
+    width: 40%;
+    font-weight: bolder;
+    font-size: 130%;
+    padding: 5px;
+}

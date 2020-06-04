@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Poppins" rel="stylesheet">
+	<script src="js/script.js"></script>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portafolio - Samantha Arburola</title>
+</head>
+
+<body>
+<script>
+function newE() {
+    window.open("http://www.w3schools.com","",'top=300,left=500,width=500,height=500');
+}
+</script>
+	<header class="col-12">
+		<h1>Portafolio Personal</h1>
+		<h2>Samantha Arburola</h2>
+	</header>
+
+	<nav class="col-12">
+		<ul>
+			<li class="col-2"><a href="index.html">Inicio</a></li>
+			<li class="col-2"><a href="formacion.html">Formación</a></li>
+			<li class="col-2"><a href="intereses.html">Intereses Personales</a></li>
+			<li class="col-2 active"><a href="portafolio.html">Portafolio de Proyectos</a></li>
+			<li class="col-2"><a href="contacto.html">Contáctame</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<articles class="col-12">
+           <section><button class="big-btn" id="btn-actualizarPeriodo" onclick="actualizarPeriodo()">Actualizar Periodo</button></section>
+            <section class="col-6 datas tableActual">   
+                  <div id="periodoActual" class="oculta">
+                       <table class="col-12 ">
+                          <caption>Periodo Actual</caption> 
+                           <tr>
+                               <td class="col-4">Periodo</td>
+                               <td class="col-4"><select name="addPeriodo" id="addPeriodo">
+                                   <option value="0">Seleccione</option>
+                                   <option value="1">Verano 2016-2017</option>
+                                   <option value="n">Nuevo Periodo</option>
+                               </select></td>
+                           </tr>
+                           <tr>
+                               <td>Curso</td>
+                               <td><select name="addCurso" id="addCurso">
+                                   <option value="0">Seleccione</option>
+                                   <option value="1">IDAW</option>
+                                   <option value="n">Nuevo Curso</option>
+                               </select>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td colspan="2"><button id="guardarPeriodo" onclick="savePeriod()">Guardar</button></td>
+                           </tr>
+                        </table>
+                    </div>
+			</section>
+            <section class="col-12 datas">			
+				<table class="col-12 portafolio">
+				    <caption><h3>Verano 2016-2017</h3></caption>
+					<tr>
+						<th class="col-1 myTh">Código</th>
+						<th class="col-3 myTh">Nombre</th>
+						<th class="col-3 myTh">Profesor</th>
+						<th class="col-2 lasTh">Horario</th>
+						<th class="col-1 lasTh">Editar</th>
+						
+					</tr>
+					<tr>
+						<td>IC-8016</td>
+						<td>Introducción a Desarrollo de Aplicaciones Web</td>
+						<td>Eugenia Zeledón</td>
+						<td>k-m-j 1pm-5pm</td>
+						<td><button>Editar</button></td>
+					</tr>
+                    <tr>
+						<td>IC-0000</td>
+						<td>Computación</td>
+						<td>No Asignado</td>
+						<td>k-j 13:00-14:50</td>
+						<td><button>Editar</button></td>
+					</tr>
+					<tr>
+					    <td colspan="5"><button>Guardar</button></td>
+					</tr>
+				</table>
+			</section>
+
+			<section class="col-12 datas">
+				<table class="col-12 portafolio" id="myProjectTable">
+                    <tfoot>
+                        <td colspan="5"><button id="newProject" onclick="addProject()">Agregar</button></td>
+                    </tfoot>
+				    <caption><h3>Proyectos Desarrollados</h3></caption>
+					<tr>
+						<th class="col-1 myTh">Semestre</th>
+						<th class="col-2 myTh">Curso</th>
+						<th class="col-2 myTh">Nombre</th>
+						<th class="col-3 myTh">Resumen</th>
+						<th class="col-1 lasTh">Editar</th>
+					</tr>
+					<tr title="Este es un ejemplo alambrado">
+						<td>Semestre II 2014</td>
+						<td>Programación Orientada a Objetos</td>
+						<td>Estimacao</td>
+						<td>Sistema de Adopción de Mascotas</td>
+						<td><button>Editar</button></td>
+					</tr>
+				</table>
+			</section>
+
+		</articles>
+	</main>
+	<footer class="col-12">
+	<p>
+		© 2017 by Samantha Arburola - Introducción al Desarrollo de Aplicaciones Web
+    </p>
+	</footer>
+</body>
+<script src="js/script.js"></script>
+</html>
+

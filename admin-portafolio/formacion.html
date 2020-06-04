@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Poppins" rel="stylesheet">
+	<script src="js/script.js"></script>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formación - Samantha Arburola</title>
+</head>
+
+<body>
+	<header>
+		<h1>Portafolio Personal</h1>
+		<h2>Samantha Arburola</h2>
+	</header>
+
+	<nav class="col-12">
+		<ul>
+			<li class="col-2"><a href="index.html">Inicio</a></li>
+			<li class="col-2 active"><a href="formacion.html">Formación</a></li>
+			<li class="col-2"><a href="intereses.html">Intereses Personales</a></li>
+			<li class="col-2"><a href="portafolio.html">Portafolio de Proyectos</a></li>
+			<li class="col-2"><a href="contacto.html">Contáctame</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<articles class="col-12">
+			<section class="contact">		    
+				<form class="col-6">
+					<fieldset>
+					<legend><h3>Formación Académica</h3></legend>
+                    <label for="grado">Grado</label>
+						<select class="myIn" name="grado" id="grado" onchange="">
+                            <option value="0">Primaria</option>
+                            <option value="1">Secundaria</option>
+                            <option value="2">Universitaria</option>
+                            <option value="3">Idiomas</option>
+                            <option value="n">Nuevo Grado</option>
+                        </select>
+                        <br>
+						<label for="email">Centro Educativo</label>
+						<select class="myIn" name="centro" id="centro" onchange="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">Liceo Diurno Académico de Ciudad Colón</option>
+                            <option value="2">IEGB Pbro. Yanuario Quesada</option>
+                            <option value="3">Colegio Técnico Profesional de Educación Comercial y Servicios</option>
+                            <option value="n">Nuevo Centro Educativo</option>
+                        </select>
+                        <br>
+				        <label for="email">Ubicación</label>
+						<select class="myIn" name="ubicacion" id="ubicacion" onchange="up()">
+                            <option value="0">Seleccione</option>
+                            <option value="1">Ciudad Colón, San José</option>
+                            <option value="2">Escazú, San José</option>
+                            <option value="3">Sabana Sur, San José</option>
+                            <option value="3">Barrio Amón, San José</option>
+                            <option value="n">Nueva Ubicación</option>
+                        </select>
+                        <br>
+                        <label for="nivel">Nivel</label>
+						<select class="myIn" name="titulo" id="titulo" onchange="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">Enseñanza General Básica</option>
+                            <option value="2">Enseñanza Diversificada</option>
+                            <option value="3">Técnico Medio</option>
+                            <option value="4">Técnico</option>
+                            <option value="5">Diplomado</option>
+                            <option value="6">Bachiller</option>
+                            <option value="7">Licenciatura</option>
+                            <option value="n">Nuevo Nivel</option>
+                        </select>
+                        <br>
+                        <label for="titulo">Título</label>
+                        <input class="myIn" type="text">
+                        <br>
+                        <label for="ingreso">Año de Ingreso</label>
+						<select class="myIn" name="ingreso" id="ingreso" onchange="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">2000</option>
+                            <option value="2">2001</option>
+                            <option value="3">2002</option>
+                            <option value="4">2003</option>
+                            <option value="5">2004</option>
+                            <option value="6">2005</option>
+                            <option value="7">2006</option>
+                            <option value="8">2007</option>
+                            <option value="9">2008</option>
+                            <option value="10">2009</option>
+                            <option value="11">2010</option>
+                            <option value="12">2011</option>
+                            <option value="13">2012</option>
+                            <option value="14">2013</option>
+                            <option value="15">2014</option>
+                            <option value="16">2015</option>
+                            <option value="17">2016</option>
+                            <option value="18">2017</option>
+                        </select>
+                        <br>
+                        <label for="egreso">Año de Egreso</label>
+						<select class="myIn" name="egreso" id="egreso" onchange="">
+                            <option value="0">Seleccione</option>
+                            <option value="1">2000</option>
+                            <option value="2">2001</option>
+                            <option value="3">2002</option>
+                            <option value="4">2003</option>
+                            <option value="5">2004</option>
+                            <option value="6">2005</option>
+                            <option value="7">2006</option>
+                            <option value="8">2007</option>
+                            <option value="9">2008</option>
+                            <option value="10">2009</option>
+                            <option value="11">2010</option>
+                            <option value="12">2011</option>
+                            <option value="13">2012</option>
+                            <option value="14">2013</option>
+                            <option value="15">2014</option>
+                            <option value="16">2015</option>
+                            <option value="17">2016</option>
+                            <option value="18">2017</option>
+                            <option value="19">-</option>
+                        </select>
+						<button>Agregar</button>
+					</fieldset>
+				</form>
+			</section>
+			
+			 <section class="col-12 datas">
+                <table class="col-12">        
+                    <tbody>
+                       <tr>
+                           <td colspan="8" class="titleTable">Historial</td>
+                       </tr>
+                       <tr>
+                           <td class="col-1">Grado</td>
+                           <td class="col-2">Centro Educativo</td>
+                           <td class="col-1">Ubicación</td>
+                           <td class="col-1">Nivel</td>
+                           <td class="col-2">Título</td>
+                           <td class="col-1">Ingreso</td>
+                           <td class="col-1">Egreso</td>
+                           <td class="col-1">Editar</td>
+                       </tr>
+                        
+                        <tr>
+                            <td>Universitaria</td>
+                            <td>Tecnológico de Costa Rica</td>
+                            <td>Barrio Amón, San José</td>
+                            <td>Bachillerato</td>
+                            <td>Ing.Computación</td>
+                            <td>2013</td>
+                            <td>-</td>
+                            <td><button>Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Secundaria</td>
+                            <td>Colegio Técnico Profesional de Educación Comercial y Servicios</td>
+                            <td>Sabana Sur, San José</td>
+                            <td>Técnico Medio</td>
+                            <td>Secretariado Ejecutivo</td>
+                            <td>2010</td>
+                            <td>2012</td>
+                            <td><button>Editar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+		</articles>
+	</main>
+
+    <footer class="col-12">
+	<p>
+		© 2017 by Samantha Arburola - Introducción al Desarrollo de Aplicaciones Web
+    </p>
+	</footer>
+</body>
+</html>

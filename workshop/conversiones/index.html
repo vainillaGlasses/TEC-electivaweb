@@ -1,0 +1,45 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <link href="https://fonts.googleapis.com/css?family=Lemonada|Raleway" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/script.js"></script>
+
+		<title>Conversiones Binarias</title>
+	</head>
+	<body>
+		<main class="col-12">
+			<article>
+                <section class="col-12">
+                    <h1>Conversiones</h1>
+                </section>
+				<section id="idConv" class="col-12">
+					<h2>I. Conversión: Decimal a Binario</h2>
+					<script type="text/javascript">
+						dec2bin();
+					</script>
+				</section>
+				<section class="col-12">
+					<h2>II. Casos</h2>
+					<p>Escriba un dígito  presione la tecla enter o bien aumente con las flechas.</p>
+					<p>Decimal: <input id="valorConv" type="number" max="100" min="1" value="1" onchange="convertir()"> < 100</p>
+					<span id="idResult"></span>
+				</section>
+				<section class="col-12">
+					<h2>III. Práctica</h2>
+					<p>Cantidad de números para practicar: <input type="number" value="3" id="idCantGen" min="1"></p>
+					<div id="idPractZone" class="col-12">
+					    <button id="idGenerar" onclick="generador()">Generar</button>
+                        <button id="idHistory" onclick='calificaciones()'>Notas</button>
+					    <div class="col-12" id="idResultIII"></div>
+					    <span class="visible" id="button-check"></span>
+					    <span id="test"></span>    
+					</div>
+					
+				</section>
+			</article>
+		</main>
+	</body>
+	<footer class="col-12"><p>© 2017 <a href="http://ic-itcr.ac.cr/~sarburola/IDAW/" target="_blank">Samantha Arburola</a></p></footer>
+</html>
